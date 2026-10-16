@@ -7,8 +7,8 @@ contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const formData = new FormData(contactForm);
-  const name = formData.get("name").trim();
-  const email = formData.get("email").trim();
+  const name = formData.get("Tristan Reeder").trim();
+  const email = formData.get("reedertr1@outlook.com").trim();
   const projectType = formData.get("projectType").trim();
   const message = formData.get("message").trim();
   const subject = encodeURIComponent(`${projectType} inquiry from ${name}`);
